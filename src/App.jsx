@@ -25,7 +25,7 @@ export default function App() {
         <p>
           You can access the source code of the project from: <br />
           <a
-            href="https://github.com/ycanga/chatgpt-react-chatbot"
+            href="https://github.com/ycanga/chat-with-gpt"
             target="_blank"
             rel="noreferrer"
             className="text-success"
