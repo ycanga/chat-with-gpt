@@ -1,0 +1,111 @@
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-modal {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1050;
+    /* padding: 10px; */
+    border-radius: 10px;
+  }
+  
+  .custom-modal .modal-dialog {
+    margin: 0;
+    max-width: 350px; /* Modalın genişliği */
+  }
+  
+  .chat-container {
+    max-height: 400px;
+    min-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    font-size: 14px;
+  }
+  
+  .message.user {
+    background-color: #6582a3;
+    color: white;
+    align-self: flex-end;
+    flex-direction: row-reverse;
+  }
+  
+  .message.bot {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message-content {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+  }
+  
+  /* Chat.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.modal-show {
+  animation: fadeIn 0.3s forwards;
+}
+
+.modal-hide {
+  animation: fadeOut 0.3s forwards;
+}
+
+.modal-open .modal {
+  display: block; /* Bootstrap'in fade classı için */
+}
+
+body{
+  background-image: url(https://lh5.googleusercontent.com/proxy/DibXNWQcRjUjNdK1KPVilAkMdIc07O_cXSB2eg6AHVsumApPk02oh0YPPsxbOI1ERT9Gs8JxYCssAJBy4Z8NQB_0Wj39Ra5dm1w7a--t5w=w3840-h2160-p-k-no-nd-mv);
+}
