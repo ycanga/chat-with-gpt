@@ -4,7 +4,7 @@ Using this project, you can use ChatGPT as a simple ChatBot by integrating it in
 
 Before using the project you need to get the API Key required by OpenAI. You can use the project by defining the API Key information you received in the `config.js` file.
 
-ChatGPT API, React, Axios, SweetAlert2, Boostrap 5 and Boxicons technologies were used in this project.
+ChatGPT `API`, `React`, `Axios`, `SweetAlert2`, `Boostrap 5` and `Boxicons` technologies were used in this project.
 
 ## Installation steps
 
