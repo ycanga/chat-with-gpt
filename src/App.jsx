@@ -17,7 +17,9 @@ export default function App() {
         </p>
         <p>
           <b className="text-success">ChatGPT API</b>,{" "}
+          <b className="text-success">React</b>,{" "}
           <b className="text-success">Axios</b>,{" "}
+          <b className="text-success">SweetAlert2</b>,{" "}
           <b className="text-success">Boostrap 5</b> and{" "}
           <b className="text-success">Boxicons</b> technologies were used in
           this project.

@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Chat.css";
 import axios from "axios";
 import { ApiKey, ApiUrl, AiModel } from "../config";
+import Swal from 'sweetalert2';
 
 export default function ChatButton() {
   const [showModal, setShowModal] = useState(false);
@@ -23,6 +24,11 @@ export default function ChatButton() {
   const handleClose = () => {
     setModalClass("modal-hide");
     setTimeout(() => setShowModal(false), 300);
+  };
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleSend();
+    }
   };
 
   const scrollToBottom = () => {
@@ -75,6 +81,11 @@ export default function ChatButton() {
         })
         .catch(function (error) {
           console.log(error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: error.message,
+          });
         })
         .finally(() => {
           setLoading(false);
@@ -189,6 +200,7 @@ export default function ChatButton() {
                     placeholder="Type here..."
                     value={newMessage}
                     onChange={(e) => setNewMessage(e.target.value)}
+                    onKeyPress={handleKeyPress}
                   />
                 </div>
                 <div className="col-1">
