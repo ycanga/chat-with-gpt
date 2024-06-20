@@ -23,3 +23,7 @@ In order to run this file, you must first grant the necessary permissions. You c
 - After the necessary components are installed, you can start the project with the `npm start` command.
 
 **Note: This project is only intended as a baseline. The pr requests to be submitted can be approved according to their efficiency.
+
+### Sample images
+<img src="https://i.ibb.co/m4zxkp7/Screenshot-2024-06-20-at-22-26-05.png">
+
