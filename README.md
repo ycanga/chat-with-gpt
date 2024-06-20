@@ -2,7 +2,7 @@
 
 Using this project, you can use ChatGPT as a simple ChatBot by integrating it into your website.
 
-Before using the project you need to get the API Key required by OpenAI. You can use the project by defining the API Key information you received in the “config.js” file.
+Before using the project you need to get the API Key required by OpenAI. You can use the project by defining the API Key information you received in the `config.js` file.
 
 ChatGPT API, React, Axios, SweetAlert2, Boostrap 5 and Boxicons technologies were used in this project.
 
@@ -12,7 +12,7 @@ For the installation process, you can use the quick installation and manual inst
 
 ### Fast installation
 
-You can quickly start using the project by running the “start.sh” file in the project files.
+You can quickly start using the project by running the `start.sh` file in the project files.
 
 In order to run this file, you must first grant the necessary permissions. You can grant the necessary permissions using the `chmod +x start.sh` command.
 
